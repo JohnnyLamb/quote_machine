@@ -17,8 +17,14 @@ $(document).on('ready', function() {
       success: function(apiResponse) {
         quote = apiResponse.quoteText.trim();
         author = apiResponse.quoteAuthor;
+        console.log(author);
         link = apiResponse.quoteLink;
         $(".results-area").html(quote);
+        if(author === ''){
+
+          author = "Anonymous";
+        }
+        $(".group").html("--" + author);
       }
     });
   }

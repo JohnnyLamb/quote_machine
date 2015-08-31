@@ -1,1 +1,10 @@
 /* add custom styles */
+
+/* add custom styles */
+body {
+  padding-top: 20px;
+}
+
+.search-term {
+  color: red;
+}
